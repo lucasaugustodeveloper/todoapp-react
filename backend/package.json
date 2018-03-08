@@ -11,6 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "body-parser": "^1.15.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
     "express": "^4.14.0",
     "mongoose": "^4.7.0",
     "node-restful": "^0.2.5",
