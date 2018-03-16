@@ -1,4 +1,4 @@
-# TodoApp React
+# TodoApp Frontend React
 
 > desenvolvimento de uma aplicação em react puro de um todo list
 
