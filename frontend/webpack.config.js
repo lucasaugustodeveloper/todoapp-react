@@ -1,31 +1,24 @@
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const hotModulesReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin')
-const path = require('path')
 
 module.exports = {
   entry: './src/index.jsx',
   output: {
-    path: path.resolve(__dirname, '/public'),
+    path: __dirname + '/public',
     filename: './app.js'
   },
   devServer: {
-    historyApiFallback: true,
-    port: 8080,
-    contentBase: './public',
-    hot: true,
-    progress: true,
-    inline: true
+    port: 3000,
+    contentBase: './public'
   },
   resolve: {
-    extensions: ['', 'js', 'jsx'],
+    extensions: ['', '.js', '.jsx'],
     alias: {
-      modules: path.resolve(__dirname, '/node_modules')
+      modules: __dirname + '/node_modules'
     }
   },
   plugins: [
-    new ExtractTextPlugin('app.css'),
-    new webpack.HotModuleReplacementPlugin()
+    new ExtractTextPlugin('app.css')
   ],
   module: {
     loaders: [{
