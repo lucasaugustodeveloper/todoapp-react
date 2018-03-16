@@ -1,9 +1,10 @@
 {
     "extends": [
-        "eslint:standard",
+        "eslint:recommended",
         "plugin:react/recommended"
     ],
     "parserOptions": {
+        "ecmaVersion": 6,
         "ecmaFeatures": {
             "jsx": true
         }
@@ -11,5 +12,8 @@
     "rules": {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error"
+    },
+    "env": {
+        "es6": true
     }
 }
