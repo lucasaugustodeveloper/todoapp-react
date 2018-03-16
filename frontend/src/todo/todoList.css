@@ -1,5 +1,10 @@
+.todoList {
+    margin-top: 5rem;
+}
+
 .table {
     margin-top: 1rem;
+    transition: all .5s linear;
 }
 
 .todoList .done {
